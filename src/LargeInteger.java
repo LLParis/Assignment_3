@@ -64,7 +64,7 @@ public class LargeInteger extends HasState implements Relatable, Serializable {
     }
 
     public LargeInteger add(LargeInteger other) {
-        intmaxLength = Math.max(this.digitCount, other.digitCount);
+        int maxLength = Math.max(this.digitCount, other.digitCount);
         int carry = 0;
         LargeInteger result = new LargeInteger();
         result.digitCount = 0;
